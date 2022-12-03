@@ -1,0 +1,275 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body,
+  html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  main {
+    height: auto;
+  }
+  
+  /* Header style start */  
+  .header {
+    /* overflow: hidden; */
+    background-color: #023047;
+    padding: 20px 10px;
+  }
+  
+  .header a {
+    float: none;
+    color: white;
+    text-align: left;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    display: block;
+  }
+
+  .header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+  }
+  
+  .header a:hover {
+    background-color: #f1f1f1;
+    color: #023047
+  }
+  
+  .header-right {
+    float: none;
+  }
+  /* header style end */
+  
+/* hero/slideshow style start */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.slide-image {
+  width: 100%;
+}
+
+.mySlides {
+  display: none;
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/* hero/slideshow style end */
+
+/* about style start */
+.about {
+  height: auto;
+  width: auto;
+  color: #023047;
+  display: inline-block;
+  padding: 20px;
+}
+
+.about-villa {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-villa h3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.5em;
+  padding-bottom: 20px;
+}
+
+.about-villa h4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.about-villa p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.2rem;
+  align-self: center;
+  padding: 10px;
+}
+/* about style end */
+
+/* Testimonials style start */
+.testimonials-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1.2rem;
+  align-self: center;
+  padding: 10px;
+  color: #023047;
+}
+
+.container-testimonials {
+  color: white;
+  border: 4px solid #023047;
+  background-color: #219ebc;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+.container-testimonials span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+/* Testimonials style end */
+
+/* form style start */
+.container {
+    height: 100%;
+    width: auto;
+    background-color: #023047;
+    margin: 30px auto 30px auto;
+    color: white;
+  }
+  
+  #contactForm {
+    padding: 25px;
+  }
+  
+  #contactForm h2 {
+    padding-bottom: 20px;
+  }
+  
+  #contactForm p {
+    padding-bottom: 20px;
+  }
+  
+  label {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    padding: 0;
+  }
+  
+  .submit_button {
+    background-color: #f1f1f1;
+    color: #023047;
+    padding: 14px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 40px;
+  }
+  
+  .submit_button:hover {
+    background-color: #ffb703;
+  }
+  
+  input,
+  textarea {
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+  }
+  
+  input {
+    height: 30px;
+  }
+  /* form style end */
+  
+  /* footer style start */
+  footer {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    background-color: #219ebc;
+    padding: 0 20px 20px 20px;
+  }
+  
+  footer h4 {
+    padding: 20px 10px 10px 10px;
+    font-weight: lighter;
+  } 
+
+  .booking-link {
+    color: white;
+  }
+
+  .booking-link:hover{
+    color: #ffb703;
+  }
+  /* footer style end */
+
+/* media querries */
+@media only screen and (min-width: 844px) {
+ .about-villa h3 {
+  position: absolute;
+  display: flex;
+  margin-bottom: 300px;
+ }
+
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-flow: row wrap;
+  }
+
+  #contactForm {
+    width: 800px;
+  }
+
+  .social-form {
+    position: relative;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+
+  .slideshow-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  
+  .slide-image {
+    width: 100%;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+}
+/* media querries end */
